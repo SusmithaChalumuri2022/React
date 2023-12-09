@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Learning</title>
+</head>
+<body>
+    <h1>Header</h1>
+    <div id="container">
+        <h1>This element will be replaced by the elements which are rendering from render method</h1>
+    </div>
+    <h2>Footer</h2>
+
+    <!-- Integrated react in our project using CDN's -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="App.js"></script>
+
+    <!-- Note: 
+    order of these script tags matters because react-dom js library uses some funtions from react js library
+    Also, our app.js is using methods from react and react-dom. -->
+</body>
+
+<!-- 
+    When browser starts executing our html page, it will render h1 element
+    Then loads and integrate react and react dom to our app
+    Then it will load our js file and executes and 
+    when it executes render method, it will replace content inside the root element.
+
+    The element which is selected as root in react, inside that only react renders everything.
+ -->
+</html>
